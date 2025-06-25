@@ -125,6 +125,6 @@ if user_mbti:
         st.markdown(f"[{music['title']}]({music['url']})")
 
         if st.button("다시 추천해줘 🔄"):
-            st.experimental_rerun()
+            st.rerun()
     else:
         st.warning("이 MBTI에 대한 추천 정보가 없어요. 곧 추가할게요!")
