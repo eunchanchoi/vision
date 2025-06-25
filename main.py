@@ -36,7 +36,7 @@ recommendations = {
         "music": [("BTS - Spring Day", "https://www.youtube.com/watch?v=xEeFrLSkMm8"),
                   ("Adele - Easy On Me", "https://www.youtube.com/watch?v=U3ASj1L6_sY")]
     },
-    # 다른 MBTI들도 같은 형식으로 추가 가능!
+    # 다른 MBTI도 같은 방식으로 추가 가능합니다
 }
 
 # 🎨 파스텔톤 배경색
