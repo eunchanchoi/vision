@@ -121,18 +121,17 @@ if user_mbti:
 
     emoji = mbti_emojis.get(user_mbti, "")
     st.header(f"{emoji} {user_mbti} 유형을 위한 추천")
+    if mbti in recommendations:
+        st.markdown(f"## {emojis.get(mbti, '')} {mbti} 추천 콘텐츠")
 
-if mbti in recommendations:
-    st.markdown(f"## {emojis.get(mbti, '')} {mbti} 추천 콘텐츠")
+        st.subheader("🎬 영화 추천")
+        for movie in recommendations[mbti]["movies"]:
+            st.markdown(f"**{movie['title']}**")
+            st.image(movie["poster"], use_column_width=True)
 
-    st.subheader("🎬 영화 추천")
-    for movie in recommendations[mbti]["movies"]:
-        st.markdown(f"**{movie['title']}**")
-        st.image(movie["poster"], use_column_width=True)
-
-    st.subheader("🎵 음악 추천")
-    for music in recommendations[mbti]["music"]:
-        st.markdown(f"[{music[0]}]({music[1]})")
+        st.subheader("🎵 음악 추천")
+        for music in recommendations[mbti]["music"]:
+            st.markdown(f"[{music[0]}]({music[1]})")
 else:
     st.warning("이 MBTI에 대한 추천 정보가 아직 없어요. 곧 추가할게요!")
 
