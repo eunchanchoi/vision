@@ -82,6 +82,7 @@ recommendations = {
     }
 }
 
+
 # 🎨 파스텔톤 배경색
 mbti_colors = {
     "INTJ": "#cce2cb", "INTP": "#d0e6f6", "ENTJ": "#f8d1c9", "ENTP": "#fce1e4",
@@ -121,19 +122,18 @@ if user_mbti:
 
     emoji = mbti_emojis.get(user_mbti, "")
     st.header(f"{emoji} {user_mbti} 유형을 위한 추천")
-    if mbti in recommendations:
-        st.markdown(f"## {emojis.get(mbti, '')} {mbti} 추천 콘텐츠")
 
-        st.subheader("🎬 영화 추천")
-        for movie in recommendations[mbti]["movies"]:
-            st.markdown(f"**{movie['title']}**")
-            st.image(movie["poster"], use_column_width=True)
+    if user_mbti in recommendations:
+        movie = random.choice(recommendations[user_mbti]["movies"])
+        music_title, music_url = random.choice(recommendations[user_mbti]["music"])
 
-        st.subheader("🎵 음악 추천")
-        for music in recommendations[mbti]["music"]:
-            st.markdown(f"[{music[0]}]({music[1]})")
-else:
-    st.warning("이 MBTI에 대한 추천 정보가 아직 없어요. 곧 추가할게요!")
+        st.subheader("🎬 추천 영화")
+        st.success(movie)
+
+        st.subheader("🎵 추천 음악")
+        st.markdown(f"✅ [{music_title}]({music_url})", unsafe_allow_html=True)
+    else:
+        st.warning("이 MBTI에 대한 추천 정보가 아직 없어요. 곧 추가할게요!")
 
 # 🔁 다시 추천 버튼
 if st.button("다시 추천해줘 🔄"):
