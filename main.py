@@ -74,41 +74,29 @@ recommendations = {
     },
 }
 
-mbti_list = list(recommendations.keys())
-
-user_mbti = st.selectbox("당신의 MBTI를 선택하세요 👇", mbti_list)
-
-# ✅ MBTI별 배경색 설정
+# 파스텔톤 배경색
 mbti_colors = {
-    "INTJ": "#cce2cb",  # 연녹색
-    "INTP": "#d0e6f6",  # 연하늘
-    "ENTJ": "#f8d1c9",  # 연살구
-    "ENTP": "#fce1e4",  # 연분홍
-    "INFJ": "#e4c1f9",  # 연보라
-    "INFP": "#ffd6e0",  # 핑크
-    "ENFJ": "#fff1bd",  # 연노랑
-    "ENFP": "#ffecd1",  # 베이지 오렌지
-    "ISTJ": "#d9f0ff",  # 연하늘
-    "ISFJ": "#f3ffe3",  # 민트
-    "ESTJ": "#ffe0ac",  # 연주황
-    "ESFJ": "#ffe5ec",  # 로즈핑크
-    "ISTP": "#e0f7fa",  # 블루 민트
-    "ISFP": "#f6dfeb",  # 연보라핑크
-    "ESTP": "#fff0f5",  # 라벤더 핑크
-    "ESFP": "#f9fbe7"   # 연연노랑
+    "INTJ": "#cce2cb", "INTP": "#d0e6f6", "ENTJ": "#f8d1c9", "ENTP": "#fce1e4",
+    "INFJ": "#e4c1f9", "INFP": "#ffd6e0", "ENFJ": "#fff1bd", "ENFP": "#ffecd1",
+    "ISTJ": "#d9f0ff", "ISFJ": "#f3ffe3", "ESTJ": "#ffe0ac", "ESFJ": "#ffe5ec",
+    "ISTP": "#e0f7fa", "ISFP": "#f6dfeb", "ESTP": "#fff0f5", "ESFP": "#f9fbe7"
 }
 
+mbti_list = list(recommendations.keys())
+user_mbti = st.selectbox("당신의 MBTI를 선택하세요 👇", mbti_list)
 
+# 배경색 + 글자색 설정
 if user_mbti:
     bg_color = mbti_colors.get(user_mbti, "#ffffff")
-
-    # CSS로 배경색 적용
     st.markdown(
         f"""
         <style>
             .stApp {{
                 background-color: {bg_color};
-                color: white;
+                color: black;
+            }}
+            h1, h2, h3, h4, h5, h6, p, label {{
+                color: black !important;
             }}
         </style>
         """,
