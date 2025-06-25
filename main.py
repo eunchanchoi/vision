@@ -126,11 +126,15 @@ if user_mbti:
         movie = random.choice(recommendations[user_mbti]["movies"])
         music_title, music_url = random.choice(recommendations[user_mbti]["music"])
 
-        st.subheader("🎬 추천 영화")
-        st.success(movie)
+        
+    st.subheader("🎬 영화 추천")
+    for movie in recommendations[mbti]["movies"]:
+        st.markdown(f"**{movie['title']}**")
+        st.image(movie["poster"], use_column_width=True)
 
-        st.subheader("🎵 추천 음악")
-        st.markdown(f"✅ [{music_title}]({music_url})", unsafe_allow_html=True)
+    st.subheader("🎵 음악 추천")
+    for title, url in recommendations[mbti]["music"]:
+        st.markdown(f"[{title}]({url})")
     else:
         st.warning("이 MBTI에 대한 추천 정보가 아직 없어요. 곧 추가할게요!")
 
