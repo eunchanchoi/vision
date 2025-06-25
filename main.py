@@ -82,8 +82,6 @@ recommendations = {
     }
 }
 
-}
-
 # 🎨 파스텔톤 배경색
 mbti_colors = {
     "INTJ": "#cce2cb", "INTP": "#d0e6f6", "ENTJ": "#f8d1c9", "ENTP": "#fce1e4",
