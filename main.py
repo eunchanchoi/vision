@@ -1,3 +1,14 @@
+# 배경음 삽입 (앱 맨 위에 추가)
+st.markdown(
+    """
+    <audio autoplay loop>
+        <source src="https://www.bensound.com/bensound-music/bensound-dreams.mp3" type="audio/mp3">
+    </audio>
+    """,
+    unsafe_allow_html=True
+)
+
+
 import streamlit as st
 import random
 
