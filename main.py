@@ -122,7 +122,7 @@ if user_mbti:
     emoji = mbti_emojis.get(user_mbti, "")
     st.header(f"{emoji} {user_mbti} 유형을 위한 추천")
 
-    if mbti in recommendations:
+if mbti in recommendations:
     st.markdown(f"## {emojis.get(mbti, '')} {mbti} 추천 콘텐츠")
 
     st.subheader("🎬 영화 추천")
