@@ -80,11 +80,24 @@ user_mbti = st.selectbox("당신의 MBTI를 선택하세요 👇", mbti_list)
 
 # ✅ MBTI별 배경색 설정
 mbti_colors = {
-    "INTJ": "#1f1f2e", "INTP": "#2e1f2e", "ENTJ": "#2e1f1f", "ENTP": "#332b1f",
-    "INFJ": "#1f2e2e", "INFP": "#1f2e1f", "ENFJ": "#2e2e1f", "ENFP": "#3e2f1f",
-    "ISTJ": "#1f2f3f", "ISFJ": "#2f3f4f", "ESTJ": "#4f3f2f", "ESFJ": "#4f4f3f",
-    "ISTP": "#1f3f2f", "ISFP": "#2f4f3f", "ESTP": "#4f2f2f", "ESFP": "#5f3f2f"
+    "INTJ": "#cce2cb",  # 연녹색
+    "INTP": "#d0e6f6",  # 연하늘
+    "ENTJ": "#f8d1c9",  # 연살구
+    "ENTP": "#fce1e4",  # 연분홍
+    "INFJ": "#e4c1f9",  # 연보라
+    "INFP": "#ffd6e0",  # 핑크
+    "ENFJ": "#fff1bd",  # 연노랑
+    "ENFP": "#ffecd1",  # 베이지 오렌지
+    "ISTJ": "#d9f0ff",  # 연하늘
+    "ISFJ": "#f3ffe3",  # 민트
+    "ESTJ": "#ffe0ac",  # 연주황
+    "ESFJ": "#ffe5ec",  # 로즈핑크
+    "ISTP": "#e0f7fa",  # 블루 민트
+    "ISFP": "#f6dfeb",  # 연보라핑크
+    "ESTP": "#fff0f5",  # 라벤더 핑크
+    "ESFP": "#f9fbe7"   # 연연노랑
 }
+
 
 if user_mbti:
     bg_color = mbti_colors.get(user_mbti, "#ffffff")
