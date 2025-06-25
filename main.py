@@ -18,25 +18,70 @@ mbti_emojis = {
 recommendations = {
     "INTJ": {
         "movies": ["인셉션", "인터스텔라", "셜록", "매트릭스"],
-        "music": [("Hans Zimmer - Time", "https://www.youtube.com/watch?v=RxabLA7UQ9k"),
-                  ("Radiohead - Everything in Its Right Place", "https://www.youtube.com/watch?v=onRk0sjSgFU")]
+        "music": [("Hans Zimmer - Time", "https://www.youtube.com/watch?v=RxabLA7UQ9k")]
+    },
+    "INTP": {
+        "movies": ["소셜 네트워크", "굿 윌 헌팅", "매트릭스", "아이로봇"],
+        "music": [("Radiohead - No Surprises", "https://www.youtube.com/watch?v=u5CVsCnxyXg")]
+    },
+    "ENTJ": {
+        "movies": ["월 스트리트", "인턴", "킹스맨", "머니볼"],
+        "music": [("Imagine Dragons - Believer", "https://www.youtube.com/watch?v=7wtfhZwyrcc")]
+    },
+    "ENTP": {
+        "movies": ["아이언맨", "셜록 홈즈", "조커", "위대한 쇼맨"],
+        "music": [("Panic! At The Disco - High Hopes", "https://www.youtube.com/watch?v=IPXIgEAGe4U")]
+    },
+    "INFJ": {
+        "movies": ["비포 선라이즈", "그린북", "트루먼 쇼", "라이프 오브 파이"],
+        "music": [("Sufjan Stevens - Mystery of Love", "https://www.youtube.com/watch?v=3Uqv1fHLtmg")]
     },
     "INFP": {
         "movies": ["이터널 선샤인", "월플라워", "비긴 어게인", "어바웃 타임"],
-        "music": [("Lauv - I Like Me Better", "https://www.youtube.com/watch?v=B3eAMGXFw1o"),
-                  ("Lana Del Rey - Young and Beautiful", "https://www.youtube.com/watch?v=o_1aF54DO60")]
+        "music": [("Lauv - I Like Me Better", "https://www.youtube.com/watch?v=B3eAMGXFw1o")]
+    },
+    "ENFJ": {
+        "movies": ["타이타닉", "원스", "드림걸즈", "굿 윌 헌팅"],
+        "music": [("John Legend - All of Me", "https://www.youtube.com/watch?v=450p7goxZqg")]
     },
     "ENFP": {
         "movies": ["포레스트 검프", "라라랜드", "인턴", "주토피아"],
-        "music": [("Coldplay - Viva La Vida", "https://www.youtube.com/watch?v=dvgZkm1xWPE"),
-                  ("Owl City - Fireflies", "https://www.youtube.com/watch?v=psuRGfAaju4")]
+        "music": [("Coldplay - Viva La Vida", "https://www.youtube.com/watch?v=dvgZkm1xWPE")]
+    },
+    "ISTJ": {
+        "movies": ["셜록 홈즈", "캐치 미 이프 유 캔", "본 아이덴티티", "그레이 맨"],
+        "music": [("Beethoven - Symphony No.5", "https://www.youtube.com/watch?v=fOk8Tm815lE")]
     },
     "ISFJ": {
         "movies": ["작은 아씨들", "업", "말할 수 없는 비밀", "인사이드 아웃"],
-        "music": [("BTS - Spring Day", "https://www.youtube.com/watch?v=xEeFrLSkMm8"),
-                  ("Adele - Easy On Me", "https://www.youtube.com/watch?v=U3ASj1L6_sY")]
+        "music": [("BTS - Spring Day", "https://www.youtube.com/watch?v=xEeFrLSkMm8")]
     },
-    # 다른 MBTI도 같은 방식으로 추가 가능합니다
+    "ESTJ": {
+        "movies": ["미션 임파서블", "월 스트리트", "블랙 팬서", "다크 나이트"],
+        "music": [("Survivor - Eye of the Tiger", "https://www.youtube.com/watch?v=btPJPFnesV4")]
+    },
+    "ESFJ": {
+        "movies": ["맘마미아!", "노트북", "러브 액츄얼리", "업"],
+        "music": [("Celine Dion - My Heart Will Go On", "https://www.youtube.com/watch?v=FHG2oizTlpY")]
+    },
+    "ISTP": {
+        "movies": ["본 시리즈", "인터스텔라", "007", "인셉션"],
+        "music": [("Daft Punk - Derezzed", "https://www.youtube.com/watch?v=m4cgLL8JaVI")]
+    },
+    "ISFP": {
+        "movies": ["아멜리에", "코코", "비긴 어게인", "라라랜드"],
+        "music": [("Ed Sheeran - Perfect", "https://www.youtube.com/watch?v=2Vv-BfVoq4g")]
+    },
+    "ESTP": {
+        "movies": ["분노의 질주", "베이비 드라이버", "킹스맨", "미션 임파서블"],
+        "music": [("Pitbull - Fireball", "https://www.youtube.com/watch?v=HMqgVXSvwGo")]
+    },
+    "ESFP": {
+        "movies": ["위대한 쇼맨", "맘마미아!", "인크레더블", "주토피아"],
+        "music": [("Bruno Mars - 24K Magic", "https://www.youtube.com/watch?v=UqyT8IEBkvY")]
+    }
+}
+
 }
 
 # 🎨 파스텔톤 배경색
